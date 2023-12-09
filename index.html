@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+
+<HTML lang="en-GB">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+        <title>T-Editor</title>
+        <link rel="StyleSheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="container disable">
+            <h2>Editing</h2>
+            <div class="wrapper">
+                <div class="editor-panel">
+                    <div class="filters">
+                        <label class="title">Filters</label>
+                        <div class="options">
+                            <button id="brightness" class="active">Brightness</button>
+                            <button id="saturation">Saturation</button>
+                            <button id="inversion">Inversion</button>
+                            <button id="grayscale">Grayscale</button>
+                            <button id="blur">Blur</button>
+                            <button id="contrast">Contrast</button>
+                        </div>
+                        <div class="slider">
+                            <div class="filter-info">
+                                <p class="name">Brightness</p>
+                                <p class="value">100%</p>
+                            </div>
+                            <input type="range" value="100" min="0" max="200" />
+                        </div>
+                    </div>
+                    <div class="rotations">
+                        <label class="title">Rotate & Flip</label>
+                        <div class="options">
+                            <button id="left"><i class="fa-solid fa-rotate-left"></i></button>
+                            <button id="right"><i class="fa-solid fa-rotate-right"></i></button>
+                            <button id="vertical"><i class="fa-solid fa-arrows-up-down"></i></button>
+                            <button id="horizontal"><i class="fa-solid fa-arrows-left-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="previewImg">
+                    <img src="./assets/preview.svg" alt="previewImg" />
+                </div>
+            </div>
+            <div class="controlls">
+                <button class="reset-filter">RESET FILTER</button>
+                <div class="row">
+                    <input type="file" class="fileInput" accept="image/*" hidden />
+                    <button class="chooseImg">CHOOSE IMAGE</button>
+                    <button class="saveImg">DOWNLOAD IMAGE</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://kit.fontawesome.com/5bafacb119.js" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</HTML>
